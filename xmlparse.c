@@ -17,17 +17,7 @@
 
 #define XML_BUILDING_EXPAT 1
 
-#ifdef WIN32
-#include "winconfig.h"
-#elif defined(MACOS_CLASSIC)
-#include "macconfig.h"
-#elif defined(__amigaos__)
-#include "amigaconfig.h"
-#elif defined(__WATCOMC__)
-#include "watcomconfig.h"
-#elif defined(HAVE_EXPAT_CONFIG_H)
 #include <expat_config.h>
-#endif /* ndef WIN32 */
 
 #include "ascii.h"
 #include "expat.h"
